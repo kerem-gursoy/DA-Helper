@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DA-Helper</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+  
+  <div>
+    <label for="start-time">Select shift start time</label>
+    <input type="time" id="start-time" name="start-time" step="3600" required />
+    <select id="start-period" name="start-period">
+      <option value="AM">AM</option>
+      <option value="PM">PM</option>
+    </select>
+  </div>
+  
+  <div>
+    <label for="end-time">Select shift end time</label>
+    <input type="time" id="end-time" name="end-time" step="3600" required />
+    <select id="end-period" name="end-period">
+      <option value="AM">AM</option>
+      <option value="PM">PM</option>
+    </select>
+  </div>
+  
+  <div class="cart">
+    <h2>Cart 199</h2>
+    <label><input type="radio" name="status1" value="checked-out"> Checked out</label>
+    <label><input type="radio" name="status1" value="at-the-desk"> At the desk</label>
+    <label><input type="radio" name="status1" value="missing"> Missing</label>
+  </div>
+  
+  <div class="cart">
+    <h2>Cart 198</h2>
+    <label><input type="radio" name="status2" value="checked-out"> Checked out</label>
+    <label><input type="radio" name="status2" value="at-the-desk"> At the desk</label>
+    <label><input type="radio" name="status2" value="missing"> Missing</label>
+  </div>
+  
+  <div class="cart">
+    <h2>Cart 188</h2>
+    <label><input type="radio" name="status3" value="checked-out"> Checked out</label>
+    <label><input type="radio" name="status3" value="at-the-desk"> At the desk</label>
+    <label><input type="radio" name="status3" value="missing"> Missing</label>
+  </div>
+  
+  <div class="cart">
+    <h2>Cart 181</h2>
+    <label><input type="radio" name="status4" value="checked-out"> Checked out</label>
+    <label><input type="radio" name="status4" value="at-the-desk"> At the desk</label>
+    <label><input type="radio" name="status4" value="missing"> Missing</label>
+  </div>
+  
+  <div class="cart">
+    <h2>Cart 019</h2>
+    <label><input type="radio" name="status5" value="checked-out"> Checked out</label>
+    <label><input type="radio" name="status5" value="at-the-desk"> At the desk</label>
+    <label><input type="radio" name="status5" value="missing"> Missing</label>
+  </div>
+  
+  <div class="cart">
+    <h2>Cart 001</h2>
+    <label><input type="radio" name="status6" value="checked-out"> Checked out</label>
+    <label><input type="radio" name="status6" value="at-the-desk"> At the desk</label>
+    <label><input type="radio" name="status6" value="missing"> Missing</label>
+  </div>
+  
+  <div class="cart">
+    <h2>Blue Cart</h2>
+    <label><input type="radio" name="status7" value="checked-out"> Checked out</label>
+    <label><input type="radio" name="status7" value="at-the-desk"> At the desk</label>
+    <label><input type="radio" name="status7" value="missing"> Missing</label>
+  </div>
+  
+  <div>
+    <button type="button" onclick="generateMessage()" >Generate my check-in message!</button>
+  </div>
+
+  <div>
+    <textarea id="message" rows="4" cols="50" readonly></textarea>
+  </div>
+
+</body>
+
+</html>
